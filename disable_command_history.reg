@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; copy bat_profile_rc.cmd to your user profile
+
+[HKEY_CURRENT_USER\Software\Microsoft\Command Processor]
+"AutoRun"=-

@@ -1,5 +1,6 @@
-doskey save=doskey /history $g$g %USERPROFILE%\command_history.log
-doskey quit=doskey /history $g$g %USERPROFILE%\command_history.log $T exit
-doskey exit=doskey /history $g$g %USERPROFILE%\command_history.log $t exit $1 $2
-doskey history=find /I "$*" %USERPROFILE%\command_history.log
+set "HISTORY_FILE=%USERPROFILE%\command_history.log"
+doskey save=doskey /history $g$g "%HISTORY_FILE%"
+doskey quit=doskey /history $g$g "%HISTORY_FILE%" $T exit
+doskey exit=doskey /history $g$g "%HISTORY_FILE%" $t exit $1 $2
+doskey history=find /I "$*" "%HISTORY_FILE%"
 cls
